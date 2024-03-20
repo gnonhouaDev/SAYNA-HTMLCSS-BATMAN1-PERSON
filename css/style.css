@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* LES ELEMENTS DU HEADER*/
+header{
+    background: url('/assets/Illustrations/Bathome1.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+p,h1{
+    font-family:"Space+Grotesk",Arial, Helvetica, sans-serif ;
+}
+li{
+    list-style-type: none;
+}
+.conatainer{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin:0 auto;
+    padding: 40px;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border-bottom: 1px solid;
+}
+header img{
+    height: 45px;
+    width: 130px;
+}
+.conatainer a:hover{
+    color: #fff000;
+}
+header h3{
+    position: relative;
+    margin-top:18%;
+    color: #c4c4c4;
+    text-align: center;
+    font-size: 19px;
+    line-height: 25px;
+    font-family:"Space+Grotesk",Arial, Helvetica, sans-serif ;
+}
+.h3bat{
+    color: #ffff;
+    margin-top:1.5%;
+}
+.bouton{
+    width: 25%;
+    margin: 3em auto;
+}
+.btn-lien{
+    width: 155px;
+    padding: 15px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(196, 196, 196,0.5);
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: "Rajdhani",Arial, Helvetica, sans-serif;
+}
+.btn-lien:hover{
+    background: linear-gradient(to right, #eddebf 40%, #890008 60%);
+}
+.btn-lien:first-child{
+    margin-right: 15px;
+}
+/* button:last-child{
+    width: 185px;
+} */
+.reseauSociaux ul{
+    position: relative;
+    top: -36vh;
+    float: right;
+    right: 8%;
+}
+.reseauSociaux .icone-reseau{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -2px;
+    margin: 30px;
+}
+.reseauSociaux .icone-fleche{
+    width: 75px;
+    height: 45px;
+}
+.reseauSociaux ul li img{
+    display: block;
+}
+/* LES ELEMENTS DU MAIN*/
+main{
+    background-color: #000;
+    height: 680vh;
+    color: #ffff;
+}
+main img{
+   position: relative;
+   left: 45%;
+   top: 30px;
+
+}
+main .container-1{
+    width: 75%;
+    margin:0 auto;
+}
+
+main .container-1 p{
+   font-size: 22px;
+   margin-top: 30px;
+   line-height: 33px;
+}
+.titreP1{
+    margin-top: 7em;
+}
+
+.card-1 ul {
+    display: flex;
+    margin:45px 0 0 -130px;
+    gap: 85px;
+}
+.card-1 ul li p{
+    text-align: center;
+    position: relative;
+    left: 45%;
+    top: 8px;
+    font-family: "Rajdhani",Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.card-1 ul li:hover{
+    animation: anime 2s linear alternate ;
+}
+@keyframes anime {
+    0% {
+        transform: scale(1); /* Échelle normale au départ */
+    }
+    50% {
+        transform: scale(1.2); /* Première phase à 50% de l'animation */
+    }
+    
+    100% {
+        transform: scale(1.2); /* Troisième phase à la fin de l'animation */
+    }
+}
+.figure-1 img{
+    height: 140px;
+    position: relative;
+    left: 100px;
+    top: 118px;
+}
+.figure-2 img{
+   position: relative;
+   top: -5em;
+   left: 0;
+  float: right;
+  right: -30px;
+
+    
+}
+#titreP1{
+    position: relative;
+    margin-top: 13em;
+}
+.figure-3 img {
+    width: 100%;
+    position: relative;
+    top: 5em;
+    left: 0;
+    right: 0;
+}
